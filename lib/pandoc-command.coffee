@@ -6,6 +6,7 @@ languages =
   'html': 'html5'
   'markdown': 'markdown'
   'latex': 'latex'
+  'restructuredtext': 'rst'
 
 language = (name) ->
   languages[name.toLowerCase()] || 'markdown'
