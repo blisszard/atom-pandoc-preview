@@ -47,6 +47,7 @@ class PandocView extends View
   frame: (html) ->
     @html $$$ ->
       @iframe src: "data:text/html, #{encodeURIComponent html}"
+      @body "#{html}" if html?
 
   render: ->
     pandoc @getTextStream(@editor.getText()),
